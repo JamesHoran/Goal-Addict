@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+}
+header {
+    background-color: rgb(194, 194, 194);
+    height: 20px;
+    display: flex;
+    width: 100%;
+}
+#header-left-link-contianer {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+#header-right-link-contianer {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+.link {
+    text-decoration: none;
+    color:rgb(0, 0, 0)
+}
+.tab {
+    display: none;
+}
