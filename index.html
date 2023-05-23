@@ -8,53 +8,15 @@
 <body>
     <header>
         <div id="header-left-link-contianer">
-            <a class="link" href="#" onclick="openTab(event, 'goal-tracker')">Goal Tracker</a>
+            <a class="link" href="goal-tracker.html">Goal Tracker</a>
         </div>
         <div id="header-right-link-contianer">
-            <a class="link" href="#" onclick="openTab(event, 'consistency-tracker')">Consistency Tracker</a>
+            <a class="link" href="consistency-tracker.html">Consistency Tracker</a>
         </div>
     </header>
-    
 
-    <!-- Below is the main page. It will be set to a default page unless one of the tabs is clicked-->
-    <div id="page">
-            <div id="welcome-page" class="tab">
-                <h2>Welcome!</h2>
-                <p>Start tracking your progress and goals today so that you can be the person you want to be!</p>
-            </div>
-            
-            <div id="consistency-tracker" class="tab">
-                <h2>Consistency Tracker</h2>
-                <p>This is the content for Consistency Tracker.</p>
-            </div>
-            
-            <div id="goal-tracker" class="tab">
-                <h2>Goal Tracker</h2>
-                <p>This is the content for Goal Tracker.</p>
-            </div>
+    <div id="welcome-container">
+        <p>Too many young men are addicted to social media and video games, distracting them from being someone they’re proud of and achieving their goals, so this app aims to make moving towards one’s goals and being someone one can be proud of more addictive and fun instead.</p>
     </div>
-
-    
-    <script>
-        let openTab = (event, tabName) => {
-            let tabContent = document.getElementById(tabName);
-            let tabs = document.getElementsByClassName('tab');
-            if(!tabName) {
-                tabContent = document.getElementById("welcome-page")
-                tabContent.style.display = "block";
-                return;
-            }
-            // Hide all tab content
-            
-            for (let i = 0; i < tabs.length; i++) {
-                tabs[i].style.display = 'none';
-            }
-            
-            // Show the selected tab content
-            
-            tabContent.style.display = "block";
-        }
-        document.addEventListener("DOMContentLoaded", openTab());
-    </script>
 </body>
 </html>
